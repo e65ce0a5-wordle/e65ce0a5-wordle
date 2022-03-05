@@ -1,5 +1,7 @@
 👋 Hi, I’m @e65ce0a5-wordle and I’m a standalone archive of [Wordle](https://www.powerlanguage.co.uk/wordle/) by [Josh Wardle](https://twitter.com/powerlanguish) and you can play me [here](https://e65ce0a5-wordle.github.io/e65ce0a5-wordle/)
 
+You can import your existing Wordle history to me by following the instructions [here](https://e65ce0a5-wordle.github.io/e65ce0a5-wordle/migrate.html)
+
 ## How to Play Me
 
 You have 6 guesses to guess the correct word.
