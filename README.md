@@ -12,3 +12,7 @@ After submitting a guess, the letters will turn gray, green, or yellow.
 - Green: The letter is correct, in the correct position.
 - Yellow: The letter is correct, but in the wrong position.
 - Gray: The letter is incorrect.
+
+You can replay previously unsolved puzzles by clicking on the puzzle number found on the bottom right of the settings page.
+
+And if you really must, you can play my Eighth Avenue cousin [here](https://e65ce0a5-wordle.github.io/e65ce0a5-wordle/4d41d2be.html)
