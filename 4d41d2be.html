@@ -336,17 +336,19 @@ const swu = StandWithUkraine = {
   let streak = Xa().currentStreak;
   let b = bitBuffer();
   let c = (nyt ? Fa : Ga)(za().lastCompletedTs);
-  while ( 0 < streak--)  b.set(c--, true); // best guess solutions based on lastCompletedTs and CurrentStreak 
+  while ( 0 < streak--)  b.set(c--, true); // best guess solutions based on lastCompletedTs and CurrentStreak
   b = bitBuffer(localStore.getItem(a) || b.toBase64());
   c = parseInt(e.target.textContent.substr(1), 10);
   let offset = 0;
   while (~c && b.get(c--)) offset -= 86400000; // 24*60*60*1000
   const now = Date.now();
   const d = new Date(now + offset);
-  // adjust offset to account for any relative differences in daylight saving 
+  // adjust offset to account for any relative differences in daylight saving
   offset += d.dstOffset() - (new Date(now)).dstOffset(); // todo: may need to recalc d?
   if (~c) {
     if (confirm("Replay last unsolved puzzle #" + c + ", " + d.toDateString() + "?")) {
+      // ensure gameState has been cached
+      if (!localStore.getItem(nyt + "gameStateCache")) localStore.setItem(nyt + "gameStateCache", localStore.getItem(nyt ? "nyt-wordle-state" : "gameState"));
       // reset gameState
       // adjust lastPlayedTs and lastCompletedTs
       ja({
