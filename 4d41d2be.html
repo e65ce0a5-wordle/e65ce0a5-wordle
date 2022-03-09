@@ -331,7 +331,8 @@ timewarp.offset = JSON.parse(window.localStorage.getItem(nyt + "offsetTs") || "0
   const solutions = nyt + "solutions";
   let streak = Xa().currentStreak;
   let buffer = bitBuffer();
-  let dayOffset = (nyt ? Fa : Ga)(za().lastCompletedTs);
+  // note: if 0 != offsetTs lastCompletedTs will have been offset and dayOffset will be wrong
+  let dayOffset = (nyt ? Fa : Ga)((0 !== timewarp.offset ? function(){return JSON.parse(localStore.getItem(nyt + "gameStateCache"))} : za)().lastCompletedTs);
   while (0 < streak--) buffer.set(dayOffset--, true); // best guess solutions based on lastCompletedTs and currentStreak
   buffer = bitBuffer(localStore.getItem(solutions) || buffer.toBase64());
   dayOffset = parseInt(e.target.textContent.substr(1), 10);
@@ -364,7 +365,8 @@ timewarp.offset = JSON.parse(window.localStorage.getItem(nyt + "offsetTs") || "0
   const localStore = window.localStorage;
   const solutions = nyt + "solutions";
   const buffer = bitBuffer();
-  let dayOffset = this.dayOffset;
+  // note the current streak is always relative to the lastCompletedTs dayOffset which is affected by timewarp.offset
+  let dayOffset = 0 !== timewarp.offset ? (nyt ? Fa : Ga)((JSON.parse(localStore.getItem(nyt + "gameStateCache"))).lastCompletedTs) : this.dayOffset;
   let streak = Xa().currentStreak;
   while (0 < streak--) buffer.set(dayOffset--, true); // best guess for unset solutions based on current streak
   localStore.setItem(solutions, bitBuffer(localStore.getItem(solutions) || buffer.toBase64()).set(this.dayOffset, true).toBase64());
