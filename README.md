@@ -5,9 +5,9 @@ You can import your existing **Wordle** history to me by following the instructi
 ## How to Play Me
 
 You have **6** guesses to solve my puzzle word.
-Each guess must be any five letter word known to me.
+Each guess must be any five-letter word known to me.
 
-After submitting a guess, the letters will turn gray⬛, green🟩, or yellow🟨.
+After submitting your guess by hitting the enter key, the letter tiles will turn either gray⬛, green🟩, or yellow🟨.
 
 - Gray⬛: The letter is incorrect.
 - Green🟩: The letter is correct, and in the correct position.
