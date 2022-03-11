@@ -17,4 +17,4 @@ You can replay previously unsolved puzzles by clicking on the **#** puzzle numbe
 
 And if you’re so inclined, you may also play my “Eighth Avenue” cousin, without the usual data harvesting shenanigans, [here](https://e65ce0a5-wordle.github.io/e65ce0a5-wordle/4d41d2be.html)
 
-[^1]: Standalone means you can download [me](https://www.powerlanguage.co.uk/wordle/index.html) or [my cousin](https://e65ce0a5-wordle.github.io/e65ce0a5-wordle/4d41d2be.html) and play us on your local device
+[^1]: Standalone means you can download [me](https://www.powerlanguage.co.uk/wordle/index.html) or [my cousin](https://e65ce0a5-wordle.github.io/e65ce0a5-wordle/4d41d2be.html) and play us offline on your local device
