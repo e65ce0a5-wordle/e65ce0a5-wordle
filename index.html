@@ -248,8 +248,9 @@ timewarp.offset = JSON.parse(window.localStorage.getItem(nyt + "offsetTs") || "0
   const now = Date.now();
   const date = new Date(now + offset);
   // adjust offset to account for any relative differences in daylight saving
-  offset += date.dstOffset() - (new Date(now)).dstOffset(); // todo: may need to recalc date?
-  if (0 <= dayOffset) {
+  offset += date.dstOffset() - (new Date(now)).dstOffset(); // tocheck: may need to recalc date when puzzle lands on a daylightsaving transition
+  if (0 === offset && "IN_PROGRESS" === za().gameStatus) alert("Please finish playing the current game before replaying another unsolved puzzle.");
+  else if (0 <= dayOffset) {
     if (confirm("Replay last unsolved puzzle #" + dayOffset + ", " + date.toDateString() + "?")) {
       // ensure gameState has been cached
       if (!localStore.getItem(nyt + "gameStateCache")) localStore.setItem(nyt + "gameStateCache", localStore.getItem(nyt ? "nyt-wordle-state" : "gameState"));
