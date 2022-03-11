@@ -1,4 +1,4 @@
-👋 Hi, I’m **@e65ce0a5-wordle** and I’m a standalone fork of [Wordle](https://www.powerlanguage.co.uk/wordle/) by [Josh Wardle](https://twitter.com/powerlanguish) and you can play me [here](https://e65ce0a5-wordle.github.io/e65ce0a5-wordle/)
+👋 Hi, I’m **@e65ce0a5-wordle** and I’m a standalone[^1] fork of [Wordle](https://www.powerlanguage.co.uk/wordle/) by [Josh Wardle](https://twitter.com/powerlanguish) and you can play me [here](https://e65ce0a5-wordle.github.io/e65ce0a5-wordle/)
 
 You can import your existing **Wordle** history to me by following the instructions [here](https://e65ce0a5-wordle.github.io/e65ce0a5-wordle/migrate.html)
 
@@ -15,4 +15,6 @@ After submitting your guess by hitting the enter key, the letter tiles will turn
 
 You can replay previously unsolved puzzles by clicking on the **#** puzzle number found on the bottom right of the settings page.
 
-And if you’re so inclined, you may also play my “Eighth Avenue” cousin [here](https://e65ce0a5-wordle.github.io/e65ce0a5-wordle/4d41d2be.html)
+And if you’re so inclined, you may also play my “Eighth Avenue” cousin, without the usual data harvesting shenanigans, [here](https://e65ce0a5-wordle.github.io/e65ce0a5-wordle/4d41d2be.html)
+
+[^1]: Standalone means you can download [me](https://www.powerlanguage.co.uk/wordle/index.html) or [my cousin](https://e65ce0a5-wordle.github.io/e65ce0a5-wordle/4d41d2be.html) and play us on your local device
