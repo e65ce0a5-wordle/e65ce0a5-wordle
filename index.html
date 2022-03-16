@@ -289,7 +289,8 @@ const bitBuffer = ( /** String|string= */ base64) => {
       "lastPlayedTs": realnow,
       "lastCompletedTs": realnow + 2
     });
-  } else {
+  }
+  if (0 === timewarp.offset) {
     // cache current game state so can restore if no offsetTs detected after reload
     localStore.setItem(nyt + "gameStateCache", JSON.stringify(za()));
   }
