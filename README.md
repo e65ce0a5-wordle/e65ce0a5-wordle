@@ -17,6 +17,8 @@ You can replay previously unsolved puzzles by clicking on the **#** puzzle numbe
 
 And if you’re so inclined, you may also play my “Eighth Avenue” cousin, without the usual data harvesting shenanigans, [here](https://e65ce0a5-wordle.github.io/e65ce0a5-wordle/4d41d2be.html)
 
+Please Note: My real “Eighth Avenue” cousin's puzzle word list currently differs from that featured on this site's version of the game. I shall endeavour to synchronise the lists. But until that has been achieved this version will remain available for historic purposes.
+
 [^1]: Standalone means you can download [me](https://e65ce0a5-wordle.github.io/e65ce0a5-wordle/index.html) or [my cousin](https://e65ce0a5-wordle.github.io/e65ce0a5-wordle/4d41d2be.html) and play us offline on your local device. Note though that my cousin’s offline puzzle word list differs from their online list.
 
 [^2]: [OG Wordle archive](https://github.com/e65ce0a5-wordle/e65ce0a5-wordle/tree/main/og.wordle) - the source from which I was forked.
