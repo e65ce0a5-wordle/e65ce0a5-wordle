@@ -431,11 +431,11 @@ function bitArray( /** String|string= */ base64) {
   }, {}));
   if ("undefined" !== typeof localStore[nyt + "statistics"]) { // null !== localStore.getItem(nyt + "statistics")
     // see https://stackoverflow.com/a/60377870
-    var a = document.querySelector("a[download$='wordle.json']") || document.createElement("a");
+    var a = document.querySelector("a[download^='wordle']") || document.createElement("a");
     a.href = URL.createObjectURL(new Blob([txt], {
       type: "text/plain"
     }));
-    a.setAttribute("download", (nyt ? "nyt-" : "") + "wordle.json");
+    a.setAttribute("download", "wordle" + (nyt ? "-nyt" : "") + ".json");
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
